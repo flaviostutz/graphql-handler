@@ -24,5 +24,5 @@ func main() {
 
 * Create a todo item with `curl -g 'http://localhost:1234/graphql?query=mutation+_{createTodo(title:"My+new+todo"){title}}'`
 
-* List all todo items with `curl -g 'http://localhost:1234/graphql?query={todoList{title}}'`
+* List all todo items with `curl -g 'http://localhost:1234/graphql?query={todos{title}}'`
 

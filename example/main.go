@@ -54,7 +54,7 @@ func queries() *graphql.Object {
 			/*
 				curl -g 'http://localhost:1234/graphql?query={todoList{title}}'
 			*/
-			"todoList": &graphql.Field{
+			"todos": &graphql.Field{
 				Type:        graphql.NewList(todoType),
 				Description: "List of todos",
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
