@@ -6,6 +6,8 @@ This implementation follows the guidelines for adapting http requests to GraphQL
 
 For a complete example, see [/example](/example)
 
+Attention: after creating this lib I found a more "official" one that does almost the same thing: https://github.com/graphql-go/handler
+
 ## Usage
 
 * Create your Golang code for handling web requests
