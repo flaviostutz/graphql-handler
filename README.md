@@ -8,16 +8,15 @@ This implementation follow the guidelines for adapting http requests to GraphQL 
 
 * Create your Golang code for handling web requests
 
-```golang
+```go
 package main
 
 import ghandler "github.com/flaviostutz/graphql-handler"
 
 func main() {
     http.HandleFunc("/graphql", ghandler.NewGraphQLHandler(sampleSchema(), true))
-    
-	log.Println("Listening on :1234...")
-	http.ListenAndServe(":1234", nil)
+    log.Println("Listening on :1234...")
+    http.ListenAndServe(":1234", nil)
 }
 ```
 
