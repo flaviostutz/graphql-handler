@@ -1,8 +1,10 @@
 # graphql-handler
 
-HTTP Handler for creating GraphQL servers in Golang.
+HTTP Handler for creating GraphQL servers in Golang using https://github.com/graphql-go/graphql.
 
 This implementation follows the guidelines for adapting http requests to GraphQL requests from https://graphql.org/learn/serving-over-http/
+
+For a complete example, see [/example](/example)
 
 ## Usage
 
@@ -19,6 +21,8 @@ func main() {
     http.ListenAndServe(":1234", nil)
 }
 ```
+
+* Function "sampleSchema()" is where you build the GraphQL schema using https://github.com/graphql-go/graphql
 
 * Run `go run example.go`
 
