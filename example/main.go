@@ -70,7 +70,7 @@ func mutations() *graphql.Object {
 		Name: "RootMutation",
 		Fields: graphql.Fields{
 			/*
-				curl -g 'http://localhost:1234/graphql?query=mutation+_{createTodo(title:"My+new+todo"){id,title}}'
+				curl -g 'http://localhost:1234/graphql?query=mutation+_{createTodo(title:"My+new+todo"){title}}'
 			*/
 			"createTodo": &graphql.Field{
 				Type:        todoType, // the return type for this field
